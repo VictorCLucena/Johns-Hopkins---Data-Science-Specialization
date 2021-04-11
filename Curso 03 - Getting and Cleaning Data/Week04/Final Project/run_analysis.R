@@ -45,4 +45,4 @@ names(mean_std_df) <- gsub('Freq$',"Frequency",names(mean_std_df))
 
 final_df <- group_by(mean_std_df, subject, Activity) %>%
   summarise_all(list(mean))
-write.table(final_df, "Final_df.txt", row.name=FALSE))
+write.table(final_df, "Final_df.txt", row.name=FALSE)
